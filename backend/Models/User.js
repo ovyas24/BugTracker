@@ -10,3 +10,5 @@ const userSchema = new Schema({
     projects: [{type: Schema.Types.ObjectId, ref: 'project'}],
     issues: [{ type: Schema.Types.ObjectId, ref: 'issue' }],
 })
+
+module.exports = mongoose.model('User', userSchema);
